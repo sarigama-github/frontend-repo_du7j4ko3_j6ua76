@@ -48,7 +48,7 @@ export default function Cylinder() {
         <div className="absolute inset-0 overflow-visible" style={{ perspective: '1400px' }}>
           {/* WORLD */}
           <div
-            className="absolute inset-0 transition-transform duration-800 ease-out"
+            className="absolute inset-0 transition-transform duration-700 ease-out"
             style={{
               transformStyle: 'preserve-3d',
               transform: `translateZ(-${RADIUS}px) rotateX(${tiltDeg}deg) rotateY(${rotationDeg}deg)`,
@@ -110,7 +110,7 @@ export default function Cylinder() {
               if (!isAnchor) {
                 return (
                   <div
-                    key={`slat-${i}`]
+                    key={`slat-${i}`}
                     className="absolute top-0"
                     style={{
                       width: faceWidth + 'px',
@@ -135,7 +135,7 @@ export default function Cylinder() {
 
               return (
                 <div
-                  key={`panel-${i}`]
+                  key={`panel-${i}`}
                   className="absolute top-0"
                   style={{
                     width: panelWidth + 'px',
